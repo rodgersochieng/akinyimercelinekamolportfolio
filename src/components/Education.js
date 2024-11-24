@@ -2,7 +2,6 @@ import React from "react";
 import linkedin from '../avatar/linkedin.png'
 import ALX from '../avatar/ALX.png' 
 import coursera from '../avatar/Courseralogo1.svg.png'
-import mmu from '../avatar/MMU.png'
 
 
 const certificates = [   
@@ -48,27 +47,28 @@ const certificates = [
     skills: ['Project planning and organization', 'Empathy', 'Time and deadline management', 'Effective communication and collaboration', 'Resource allocation and task prioritization', 'Risk identification and problem-solving', 'Stakeholder coordination and relationship management', 'Team leadership and motivation', 'Agile, Scrum and flexible project management approaches', 'Adaptability'],
     image: coursera 
   },
-  {
-    institution: 'Masinde Muliro University of Science and Technology',
-    title: 'Bachelor of Science in Criminology',
-    description: <p>Graduating from Masinde Muliro University of Science and Technology wasn’t just about earning a degree it was about understanding the complexities of society, justice, and human behavior. My studies gave me a deeper appreciation for the systems that maintain order and the challenges of navigating them. <br></br>
+  // {
+  //   institution: 'Masinde Muliro University of Science and Technology',
+  //   title: 'Bachelor of Science in Criminology',
+  //   description: <p>Graduating from Masinde Muliro University of Science and Technology wasn’t just about earning a degree it was about understanding the complexities of society, justice, and human behavior. My studies gave me a deeper appreciation for the systems that maintain order and the challenges of navigating them. <br></br>
 
-    From analyzing criminal behavior to exploring the ethics of justice, I’ve developed critical thinking and problem-solving skills that help me see the bigger picture. Whether it’s examining patterns, working with diverse perspectives, or finding solutions to tough situations, I’m ready to contribute meaningfully in any space where logic and empathy are needed.</p>,
-    skills: ['Problem-solving in complex scenarios', 'Empathy', 'Critical thinking and analysis', 'Understanding legal and justice systems','Communication and interpersonal skills', 'Research and data interpretation', 'Conflict resolution', 'Ethical decision-making', 'Attention to detail in investigations','Ability to analyze and assess risks'],
-    image: mmu 
-  },
+  //   From analyzing criminal behavior to exploring the ethics of justice, I’ve developed critical thinking and problem-solving skills that help me see the bigger picture. Whether it’s examining patterns, working with diverse perspectives, or finding solutions to tough situations, I’m ready to contribute meaningfully in any space where logic and empathy are needed.</p>,
+  //   skills: ['Problem-solving in complex scenarios', 'Empathy', 'Critical thinking and analysis', 'Understanding legal and justice systems','Communication and interpersonal skills', 'Research and data interpretation', 'Conflict resolution', 'Ethical decision-making', 'Attention to detail in investigations','Ability to analyze and assess risks'],
+  //   image: mmu 
+  // },
   
 ];
 
 function Certificates() {
   return (
     <section className="text-center my-8">
-      <h2 className="text-3xl font-bold mb-4">What I have Learned So Far</h2>
+      <h2 className="text-2xl font-semibold text-gray-900 mb-6 tracking-wide uppercase font-serif italic">What I have Learned So Far</h2>
+      {/* <h2 className="text-3xl font-bold mb-4">What I have Learned So Far</h2> */}
       <div className="space-y-8">
         {certificates.map((cert, index) => (
           <div key={index} className="flex flex-col md:flex-row items-center p-4">
             <img src={cert.image} alt={`${cert.institution} logo`} className="w-35 h-35 md:mr-4 mb-4 md:mb-0"/>
-            <div className="text-left">
+            <div className="text-left text-black">
               <h3 className="text-xl font-semibold">{cert.title}</h3>
               <p className="mt-2">{cert.description}</p>
               <p className="mt-2 font-bold">Issued by {cert.institution}</p>
@@ -76,7 +76,7 @@ function Certificates() {
                 <p className="font-semibold">Skills:</p>
                 <div className="flex flex-wrap">
                   {cert.skills.map((skill, i) => (
-                    <span key={i} className="bg-gray-200 text-black rounded-full px-3 py-1 m-1 text-sm font-semibold">
+                    <span key={i} className="bg-[#9b4819] text-white rounded-full px-3 py-1 m-1 text-sm font-semibold">
                       {skill}
                     </span>
                   ))}

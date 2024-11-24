@@ -1,6 +1,6 @@
-# Faith Koki's Portfolio
+# Merceline Akinyi's Portfolio
 
-Welcome to my portfolio! 👋🏾 I’m Faith Koki, and I’m thrilled to share the skills, experience, and passion that I bring to every project. My work is driven by the belief that every challenge has a solution, and I'm here to make those solutions impactful and effective.
+Welcome to my portfolio! 👋🏾 I’m AKinyi Kamol, and I’m thrilled to share the skills, experience, and passion that I bring to every project. My work is driven by the belief that every challenge has a solution, and I'm here to make those solutions impactful and effective.
 
 ## What You’ll Find Here:
 

@@ -1,181 +1,67 @@
 
-// import React from "react";
-// import chet from '../avatar/CHET.png';  
-// import mgas from '../avatar/mgaslogo.jpeg';  
-// import optica from '../avatar/Opticalogo.png';  
-// import safaricom from '../avatar/topimagelogo.jpeg';  
-// import prosecutions from '../avatar/dpplogo.jpg';  
-
-// const experiences = [
-//   {
-//     title: 'Security and Compliance Officer',
-//     company: 'CHET Holdings and Corporate Solutions',
-//     date: '03/2024 - Present',
-//     description: 'Conducted comprehensive surveillance and behavioral analysis across high-risk areas, successfully reducing theft incidents by 30% within the first six months through proactive risk identification and mitigation strategies. Led detailed interviews and interrogations of individuals involved in suspicious activities, contributing to a 40% increase in the successful resolution of fraud cases by gathering key evidence and collaborating with law enforcement when necessary. Played a key role in developing and implementing enhanced security policies and procedures, which led to a 25% improvement in compliance training effectiveness, increasing staff awareness and reducing procedural violations.',
-//     responsibilities: ['Reduced theft incidents by 30%', 'Increased fraud case resolutions by 40%', 'Developed enhanced security policies', 'Improved compliance training effectiveness by 25%'],
-//     image: chet
-//   },
-//   {
-//     title: 'Technical Sales Representative',
-//     company: 'M-Gas Limited',
-//     date: '11/2023 - 02/2024',
-//     description: 'Onboarded new clients for a gas product, managing customer complaints effectively and ensuring smooth service delivery for over 150 clients, achieving a 95% satisfaction rate in post-onboarding surveys through tailored support and responsiveness. Delivered timely product servicing and resolved customer issues while maintaining high satisfaction levels, resulting in a 30% reduction in complaint resolution time and a 20% increase in repeat business, showcasing a commitment to exceptional customer service.',
-//     responsibilities: ['Onboarded over 150 clients', 'Achieved 95% satisfaction rate', 'Reduced complaint resolution time by 30%', 'Increased repeat business by 20%'],
-//     image: mgas
-//   },
-//   {
-//     title: 'Eye Wear Consultant',
-//     company: 'Optica Limited',
-//     date: '02/2022 - 10/2023',
-//     description: 'Assisted an average of 30 customers daily in selecting eyewear, providing personalized recommendations that enhanced the customer experience and increased satisfaction. Ensured accurate reporting of sales and inventory by maintaining meticulous records, achieving a 99% accuracy rate in product records and stock levels, which streamlined operations and minimized discrepancies.',
-//     responsibilities: ['Provided personalized eyewear recommendations', 'Maintained 99% accuracy in product records', 'Streamlined operations and minimized discrepancies'],
-//     image: optica
-//   },
-//   {
-//     title: 'Security and Compliance Officer',
-//     company: 'CHET Holdings and Corporate Solutions',
-//     date: '01/2021 - 01/2022',
-//     description: 'Conducted comprehensive surveillance and intelligence gathering to ensure the security of company assets, resulting in a 40% reduction in security incidents over 12 months through targeted risk assessment and response strategies. Monitored and mitigated potential security threats, including fraud and theft, successfully preventing $50,000 in potential losses through proactive measures and enhancements to security policies, demonstrating a strong commitment to asset protection.',
-//     responsibilities: ['Reduced security incidents by 40%', 'Prevented $50,000 in potential losses', 'Enhanced security policies'],
-//     image: chet
-//   },
-//   {
-//     title: 'Sales Agent',
-//     company: 'Top Image Agency - Safaricom',
-//     date: '09/2020 – 12/2020',
-//     description: '',
-//     responsibilities: [],
-//     image: safaricom
-//   },
-//   {
-//     title: 'Attache',
-//     company: 'Office of the Director of Public Prosecutions',
-//     date: '05/2018 – 08/2018',
-//     description: '',
-//     responsibilities: [],
-//     image: prosecutions
-//   }
-// ];
-
-// function WorkExperience() {
-//   return (
-//     <section className="text-center my-8">
-//       <h2 className="text-3xl font-bold mb-6 text-white">Work Experience</h2>
-//       <div className="grid grid-cols-1 gap-8">
-//         {experiences.map((experience, index) => (
-//           <div key={index} className="bg-transparent border border-gray-700 rounded-lg overflow-hidden shadow-lg">
-//             <div className="p-6 text-white flex flex-col md:flex-row items-start">
-//               <img src={experience.image} alt={`${experience.company} logo`} className="w-24 h-24 object-contain mb-4 md:mr-6 md:mb-0" />
-//               <div>
-//                 <h3 className="text-2xl font-semibold mb-2">{experience.title}</h3>
-//                 <p className="text-gray-400 mb-1">{experience.company}</p>
-//                 <p className="text-gray-400 mb-4">{experience.date}</p>
-//                 <p className="text-gray-300 mb-4">{experience.description}</p>
-//                 {experience.responsibilities.length > 0 && (
-//                   <div className="mb-4">
-//                     <h4 className="font-semibold">Responsibilities:</h4>
-//                     <ul className="list-disc list-inside text-left">
-//                       {experience.responsibilities.map((responsibility, i) => (
-//                         <li key={i} className="text-gray-300">{responsibility}</li>
-//                       ))}
-//                     </ul>
-//                   </div>
-//                 )}
-//               </div>
-//             </div>
-//           </div>
-//         ))}
-//       </div>
-//     </section>
-//   );
-// }
-
-// export default WorkExperience;
-
-
 import React from "react";
-import chet from '../avatar/CHET.png';  
-import mgas from '../avatar/mgaslogo.jpeg';  
-import optica from '../avatar/Opticalogo.png';  
-import safaricom from '../avatar/topimagelogo.jpeg';  
-import prosecutions from '../avatar/dpplogo.jpg';  
+import { FaEnvelope, FaCalendarAlt, FaListAlt, FaPlane } from "react-icons/fa"; // Importing relevant icons
 
-const experiences = [
+const projects = [
   {
-    title: 'Security and Compliance Officer',
-    company: 'CHET Holdings and Corporate Solutions',
-    date: '03/2024 - Present',
-    description: 'Conducted comprehensive surveillance and behavioral analysis across high-risk areas, successfully reducing theft incidents by 30% within the first six months through proactive risk identification and mitigation strategies. Led detailed interviews and interrogations of individuals involved in suspicious activities, contributing to a 40% increase in the successful resolution of fraud cases by gathering key evidence and collaborating with law enforcement when necessary. Played a key role in developing and implementing enhanced security policies and procedures, which led to a 25% improvement in compliance training effectiveness, increasing staff awareness and reducing procedural violations.',
-    responsibilities: ['Reduced theft incidents by 30%', 'Increased fraud case resolutions by 40%', 'Developed enhanced security policies', 'Improved compliance training effectiveness by 25%'],
-    image: chet
+    name: 'Email Management',
+    description: 'Streamlined email management system to prioritize, categorize, and respond to emails efficiently. Perfect for reducing inbox clutter and ensuring timely communication.',
+    features: ['Inbox Organization', 'Priority Email Categorization', 'Template-Based Replies', 'Follow-Up Scheduling'],
+    link: 'https://docs.google.com/document/d/1xPBjbPn8kltwQM-HlU97opUBi_oOSm6a_qn2aTn6PYg/edit?usp=sharing',
+    icon: <FaEnvelope className="text-5xl text-[#9b4819] mb-4 mx-auto" />, // Email icon
   },
   {
-    title: 'Technical Sales Representative',
-    company: 'M-Gas Limited',
-    date: '11/2023 - 02/2024',
-    description: 'Onboarded new clients for a gas product, managing customer complaints effectively and ensuring smooth service delivery for over 150 clients, achieving a 95% satisfaction rate in post-onboarding surveys through tailored support and responsiveness. Delivered timely product servicing and resolved customer issues while maintaining high satisfaction levels, resulting in a 30% reduction in complaint resolution time and a 20% increase in repeat business, showcasing a commitment to exceptional customer service.',
-    responsibilities: ['Onboarded over 150 clients', 'Achieved 95% satisfaction rate', 'Reduced complaint resolution time by 30%', 'Increased repeat business by 20%'],
-    image: mgas
+    name: 'Meeting Agendas',
+    description: 'Customized and professional meeting agendas to ensure all discussions stay on track. Includes key points, objectives, and timelines for effective meetings.',
+    features: ['Structured Meeting Topics', 'Time Allocation for Each Agenda Item', 'Clear Objectives', 'Pre-Meeting Preparation'],
+    link: 'https://docs.google.com/document/d/1ZzabH6MtJuopws_P6SN32wJtz825u06WVILJSE96oPY/edit?usp=sharing',
+    icon: <FaListAlt className="text-5xl text-[#9b4819] mb-4 mx-auto" />, // List icon
   },
   {
-    title: 'Eye Wear Consultant',
-    company: 'Optica Limited',
-    date: '02/2022 - 10/2023',
-    description: 'Assisted an average of 30 customers daily in selecting eyewear, providing personalized recommendations that enhanced the customer experience and increased satisfaction. Ensured accurate reporting of sales and inventory by maintaining meticulous records, achieving a 99% accuracy rate in product records and stock levels, which streamlined operations and minimized discrepancies.',
-    responsibilities: ['Provided personalized eyewear recommendations', 'Maintained 99% accuracy in product records', 'Streamlined operations and minimized discrepancies'],
-    image: optica
+    name: 'Calendar Management',
+    description: 'Comprehensive calendar management solutions to ensure all appointments, deadlines, and tasks are scheduled and coordinated effectively.',
+    features: ['Appointment Scheduling', 'Event Reminders', 'Conflict Resolution', 'Recurring Task Management'],
+    link: 'https://drive.google.com/file/d/1bq4oLQ7_sLzB318KY0wv2YnhHR06A73S/view?usp=sharing',
+    icon: <FaCalendarAlt className="text-5xl text-[#9b4819] mb-4 mx-auto" />, // Calendar icon
   },
   {
-    title: 'Security and Compliance Officer',
-    company: 'CHET Holdings and Corporate Solutions',
-    date: '01/2021 - 01/2022',
-    description: 'Conducted comprehensive surveillance and intelligence gathering to ensure the security of company assets, resulting in a 40% reduction in security incidents over 12 months through targeted risk assessment and response strategies. Monitored and mitigated potential security threats, including fraud and theft, successfully preventing $50,000 in potential losses through proactive measures and enhancements to security policies, demonstrating a strong commitment to asset protection.',
-    responsibilities: ['Reduced security incidents by 40%', 'Prevented $50,000 in potential losses', 'Enhanced security policies'],
-    image: chet
+    name: 'Travel Planning',
+    description: 'Detailed travel planning services for business trips and vacations, including itinerary creation, booking management, and expense tracking.',
+    features: ['Itinerary Creation', 'Flight and Hotel Booking', 'Expense Tracking', 'Destination Research'],
+    link: 'https://docs.google.com/presentation/d/1u8KF9wPXzFJlpEccQae7ol6U3bWhWR4d8y4Vomm5Vbs/edit?usp=sharing',
+    icon: <FaPlane className="text-5xl text-[#9b4819] mb-4 mx-auto" />, // Plane icon
   },
-  {
-    title: 'Sales Agent',
-    company: 'Top Image Agency - Safaricom',
-    date: '09/2020 – 12/2020',
-    description: 'I was responsible for driving sales, managing customer relationships, and providing tailored solutions to meet client needs.',
-    responsibilities: [],
-    image: safaricom
-  },
-  {
-    title: 'Attache',
-    company: 'Office of the Director of Public Prosecutions',
-    date: '05/2018 – 08/2018',
-    description: 'I gained valuable exposure to legal processes, assisting in various administrative tasks and providing support to the legal team during investigations.',
-    responsibilities: [],
-    image: prosecutions
-  }
 ];
 
-function WorkExperience() {
+function Projects() {
   return (
     <section className="text-center my-8">
-      <h2 className="text-3xl font-bold mb-6 text-white">Work Experience</h2>
-      <div className="grid grid-cols-1 gap-8">
-        {experiences.map((experience, index) => (
-          <div key={index} className="bg-transparent border border-gray-700 rounded-lg overflow-hidden shadow-lg">
-            <div className="p-6 text-white flex flex-col items-center">
-              <img src={experience.image} alt={`${experience.company} logo`} className="w-24 h-24 object-contain mb-4" />
-              <div className="text-center">
-                <h3 className="text-2xl font-semibold mb-2">{experience.title}</h3>
-                <p className="text-gray-400 mb-1">{experience.company}</p>
-                <p className="text-gray-400 mb-4">{experience.date}</p>
-                <p className="text-gray-300 mb-4">{experience.description}</p>
-                {experience.responsibilities.length > 0 && (
-                  <div className="mb-4">
-                    <h4 className="font-semibold">Acheivements:</h4>
-                    <ul className="list-disc list-inside text-left">
-                      {experience.responsibilities.map((responsibility, i) => (
-                        <li key={i} className="text-gray-300">{responsibility}</li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
+      <h2 className="text-3xl font-bold mb-6 text-gray-800">Starter Virtual Assistant Projects</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {projects.map((project, index) => (
+          <div key={index} className="bg-white shadow-md rounded-lg overflow-hidden">
+            <div className="p-6">
+              <div className="flex justify-center">
+                {project.icon} {/* Adding the icon */}
               </div>
+              <h3 className="text-2xl font-semibold text-[#9b4819] mb-2">{project.name}</h3>
+              <p className="text-gray-700 mb-4">{project.description}</p>
+              <div className="mb-4">
+                <h4 className="font-semibold text-gray-800">Key Features:</h4>
+                <ul className="list-disc list-inside text-left text-gray-600">
+                  {project.features.map((feature, i) => (
+                    <li key={i}>{feature}</li>
+                  ))}
+                </ul>
+              </div>
+              <a
+                href={project.link}
+                className="text-white bg-[#9b4819] hover:bg-[#7a360f] px-4 py-2 rounded"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Project
+              </a>
             </div>
           </div>
         ))}
@@ -184,4 +70,4 @@ function WorkExperience() {
   );
 }
 
-export default WorkExperience;
+export default Projects;
